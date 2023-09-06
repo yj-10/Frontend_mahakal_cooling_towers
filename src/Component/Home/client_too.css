@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.Client_too {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 20px 0px;
+  padding: 20px 0px;
+
+  /* background-color: aqua; */
+}
+.client_title{
+  text-align: center;
+}
+
+.client_title h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  color: rgba(38, 82, 97, 1);
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.client_title h1::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0px;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: rgba(38, 82, 97, 1);
+}
+
+.Client_too .box h5 {
+  padding: 10px 80px;
+  text-align: center;
+
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  margin: 10px 20px;
+  border-radius: 100px;
+  height: 80px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  min-width: 390px;
+  justify-content: center;
+}
+.Client_too .box {
+  /* width: 300px;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center; */
+}
+.client_title {
+  color: rgba(38, 82, 97, 1);
+}
+
+@media screen and (max-width: 1400px) {
+  .Client_too .box h5 {
+    height: 60px;
+    min-width: 290px;
+    font-size: 1em;
+    padding: 10px 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Client_too .box h5 {
+    height: 60px;
+    min-width: 240px;
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Client_too .box h5 {
+    height: 60px;
+    min-width: 290px;
+    max-width: 290px;
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+}
